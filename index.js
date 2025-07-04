@@ -83,7 +83,15 @@ const mock = {
 app.use(express.json());
 
 // Route: /PHPApi/dp5/remote/v1
-app.all('/dp5/remote/v1', (req, res) => {
+app.all('/dp5/remote/v1/', (req, res) => {
+  if (req.method === 'POST') {
+    res.json({ error: "OK" });
+  } else {
+    res.status(200).json({ error: "OK" });
+  }
+}
+);
+app.all('/dp5/remote/v1/scan', (req, res) => {
   if (req.method === 'POST') {
     res.json(mock);
   } else {
