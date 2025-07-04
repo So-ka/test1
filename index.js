@@ -4,25 +4,25 @@ const port = 3000;
 
 const mock = {
   scanContainer: {
-    containerBarcode: "ZI471",
-    containerGuid: "4ce768ec-6275-4219-909a-e553b6e75564",
-    containerUid: "mirage96sbs",
+    containerBarcode: "ZI998",
+    containerGuid: "c13b5bb0-b62d-4fd8-8542-1e6cf9388c19",
+    containerUid: "phantom96sbs",
     groupName: "96 SBS rack",
-    scanTime: "20200810 170126",
+    scanTime: "20250704 143211",
     orientationBarcodes: {
       orientationBarcode: [{
         row: 0,
         column: 0,
-        barcode: "ZIA100010342",
+        barcode: "ZIA200045678",
         decodeStatus: "SUCCESS",
-        x: 2748,
-        y: 560
+        x: 2780,
+        y: 580
       }]
     },
-    scanId: "da2806f0-f0d0-4b4c-9731-16432edf655b",
+    scanId: "a7e2cd1f-13fa-4c3a-91b6-91f117f65d79",
     scanTimeAnswers: {
       scanTimeAnswer: [{
-        answer: "Simon",
+        answer: "Alex",
         fullQuestion: "What is your name?",
         shortQuestion: "name"
       }]
@@ -31,49 +31,64 @@ const mock = {
       tubeBarcode: [
         {
           row: 1,
-          column: 1,
-          barcode: "ZI1000950395",
+          column: 3,
+          barcode: "ZI1234567890",
           decodeStatus: "SUCCESS",
-          x: 2892,
-          y: 437
+          x: 2100,
+          y: 470
         },
         {
-          row: 1,
-          column: 2,
-          barcode: "ZI1000950423",
+          row: 3,
+          column: 6,
+          barcode: "ZI0987654321",
           decodeStatus: "SUCCESS",
-          x: 2665,
-          y: 437
+          x: 1800,
+          y: 860
         },
         {
-          row: 1,
-          column: 5,
-          barcode: "ZI1020950423",
+          row: 5,
+          column: 9,
+          barcode: "ZI8765432190",
           decodeStatus: "SUCCESS",
-          x: 2665,
-          y: 437
+          x: 1500,
+          y: 1250
         },
         {
           row: 7,
-          column: 7,
-          barcode: "ZI1010950423",
-          decodeStatus: "SUCCESS",
-          x: 2665,
-          y: 437
-        },
-        {
-          row: 2,
           column: 1,
-          decodeStatus: "EMPTY",
-          x: 617,
-          y: 2029
+          barcode: "ZI7654321098",
+          decodeStatus: "SUCCESS",
+          x: 1100,
+          y: 1720
+        },
+        {
+          row: 6,
+          column: 5,
+          barcode: "ZI3456789012",
+          decodeStatus: "SUCCESS",
+          x: 1650,
+          y: 1400
         },
         {
           row: 2,
-          column: 2,
+          column: 8,
           decodeStatus: "EMPTY",
-          x: 390,
-          y: 2029
+          x: 2370,
+          y: 720
+        },
+        {
+          row: 4,
+          column: 4,
+          decodeStatus: "EMPTY",
+          x: 1950,
+          y: 1080
+        },
+        {
+          row: 8,
+          column: 10,
+          decodeStatus: "EMPTY",
+          x: 100,
+          y: 1850
         }
       ]
     }
