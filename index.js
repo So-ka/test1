@@ -3,31 +3,6 @@ const app = express();
 const port = 3000;
 
 const mock = {
-  scanContainer: {
-    containerBarcode: "ZI998",
-    containerGuid: "c13b5bb0-b62d-4fd8-8542-1e6cf9388c19",
-    containerUid: "phantom96sbs",
-    groupName: "96 SBS rack",
-    scanTime: "20250704 143211",
-    orientationBarcodes: {
-      orientationBarcode: [{
-        row: 0,
-        column: 0,
-        barcode: "ZIA200045678",
-        decodeStatus: "SUCCESS",
-        x: 2780,
-        y: 580
-      }]
-    },
-    scanId: "a7e2cd1f-13fa-4c3a-91b6-91f117f65d79",
-    scanTimeAnswers: {
-      scanTimeAnswer: [{
-        answer: "Alex",
-        fullQuestion: "What is your name?",
-        shortQuestion: "name"
-      }]
-    },
-    tubeBarcodes: {
       tubeBarcode: [
         {
           row: 1,
@@ -91,9 +66,7 @@ const mock = {
           y: 1850
         }
       ]
-    }
-  }
-};
+    };
 
 app.use(express.json());
 //
