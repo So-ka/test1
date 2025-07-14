@@ -6,7 +6,7 @@ const mock = {
       scanId: "abc123",
       containerBarcode: "ZI998",
       containerName: "phantom96sbs",
-      tubeBarcode: [
+      tubeBarcodes: [
         {
           row: 1,
           column: 3,
