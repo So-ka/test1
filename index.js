@@ -3,6 +3,9 @@ const app = express();
 const port = 3000;
 
 const mock = {
+      scanId: "abc123",
+      containerBarcode: "ZI998",
+      containerName: "phantom96sbs",
       tubeBarcode: [
         {
           row: 1,
