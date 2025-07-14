@@ -96,6 +96,14 @@ const mock = {
 };
 
 app.use(express.json());
+//
+app.get('/dp5/remote/v1/system/version', (req, res) => {
+  res.json({
+    version: "1.0.0",
+    build: "20250704",
+    apiVersion: "v1"
+  });
+});
 
 // Route: /PHPApi/dp5/remote/v1
 app.all('/dp5/remote/v1/', (req, res) => {
