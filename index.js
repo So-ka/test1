@@ -43,27 +43,6 @@ const mock = {
           decodeStatus: "SUCCESS",
           x: 1650,
           y: 1400
-        },
-        {
-          row: 2,
-          column: 8,
-          decodeStatus: "EMPTY",
-          x: 2370,
-          y: 720
-        },
-        {
-          row: 4,
-          column: 4,
-          decodeStatus: "EMPTY",
-          x: 1950,
-          y: 1080
-        },
-        {
-          row: 8,
-          column: 10,
-          decodeStatus: "EMPTY",
-          x: 100,
-          y: 1850
         }
       ]
     };
