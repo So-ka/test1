@@ -97,13 +97,7 @@ const mock = {
 
 app.use(express.json());
 //
-app.get('/dp5/remote/v1/system/version', (req, res) => {
-  res.json({
-    version: "1.0.0",
-    build: "20250704",
-    apiVersion: "v1"
-  });
-});
+
 
 // Route: /PHPApi/dp5/remote/v1
 app.all('/dp5/remote/v1/', (req, res) => {
@@ -121,7 +115,14 @@ app.all('/dp5/remote/v1/scan', (req, res) => {
     res.status(405).json({ error: "Method Not Allowed" });
   }
 });
-
+app.get('/dp5/remote/v1/system/version', (req, res) => {
+  res.json({
+    version: "1.0.0",
+    build: "20250704",
+    apiVersion: "v1",
+    statuscode: 200,
+  });
+});
 // 404 Handler for unmatched routes
 app.use((req, res) => {
   res.status(404).json({ error: "Not Found" });
