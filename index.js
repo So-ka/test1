@@ -75,6 +75,21 @@ app.get('/dp5/remote/v1/system/version', (req, res) => {
     statuscode: 200,
   });
 });
+app.get('/dp5/remote/v1/containers', (req, res) => {
+  res.json([{
+    uid: "c48-1",
+    type: "mirage48sbs",
+    name: "48-Well Rack 1",
+    barcode: "RACK1234567890",
+    status: "READY"
+  }, {
+    uid: "c96-1",
+    type: "mirage96sbs",
+    name: "96-Well Rack 1",
+    barcode: "RACK0987654321",
+    status: "READY"
+  }]);
+});
 // 404 Handler for unmatched routes
 app.use((req, res) => {
   res.status(404).json({ error: "Not Found" });
