@@ -94,9 +94,9 @@ app.get('/dp5/remote/v1/containers', (req, res) => {
   }]);
 });
 // 404 Handler for unmatched routes
-app.use((req, res) => {
-  res.status(404).json({ error: "Not Found" });
-});
+// app.use((req, res) => {
+//   res.status(404).json({ error: "Not Found" });
+// });
 
 app.listen(port, () => {
   console.log(`Mock API running at http://localhost:${port}/dp5/remote/v1`);
