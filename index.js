@@ -64,6 +64,10 @@ app.all('/dp5/remote/v1/', (req, res) => {
 }
 );
 app.all('/dp5/remote/v1/scan', (req, res) => {
+    console.log('About to crash the server...');
+  // Simulate a fatal error (undefined variable)
+  const result = someUndefinedFunction();
+  res.send('You will never see this');
   if (req.method === 'POST') {
     res.json(mock);
   } else {
