@@ -93,10 +93,11 @@ app.get('/dp5/remote/v1/containers', (req, res) => {
     status: "READY"
   }]);
 });
-app.get('',(req,res)=>{
-  console.log(req.query);
-  console.log(req.body);
-})
+app.get('', (req, res) => {
+  console.log('Query:', req.query);
+  console.log('Body:', req.body);  // Usually empty in GET requests
+  console.log('Headers:', req.headers);  // ✅ Print all headers
+});
 // 404 Handler for unmatched routes
 // app.use((req, res) => {
 //   res.status(404).json({ error: "Not Found" });
